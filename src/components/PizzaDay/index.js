@@ -13,7 +13,7 @@ const PizzaDay = ({src}) => {
         <PizzaDayWrapper>
                 <PizzaDayHeading>Pizza of the day</PizzaDayHeading>
                 <PizzaDayCaption>The pizza of the day is a vegan pizza</PizzaDayCaption>
-                <PizzaDayButton src={src} >Click me</PizzaDayButton> 
+                <PizzaDayButton onClick={() => window.open("https://github.com/RainbowWZRD")} >Click me</PizzaDayButton> 
         </PizzaDayWrapper>  
         </PizzaDayContainer>
         )
