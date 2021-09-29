@@ -28,17 +28,45 @@ height:100vh;
 max-height:100%;
 padding:0 2rem;
 width:650px;
-text-transfrom:uppercase;
-line-heigh: 1;
-font-weight:bold;
+text-transform:uppercase;
+line-height: 1;
+font-weight:900;
+
+@media screen and (max-width : 650px){
+    width:100%;
+}
 `
 
 export const HeroH1 = styled.h1`
 color: white;
-font-weight:800;
+font-size: clamp(2.5rem, 10vw, 5rem);
+margint-bottom:1rem;
+box-shadow: 5px 5px #e9ba23;
+letter-spacing:2px;
 `
 
 export const HeroP = styled.p`
+font-size: clamp(1rem, 5vw, 2.5rem);
+margin-top: 1rem;
 color: white;
 font-weight:400;
+`
+
+export const HeroBtn = styled.button`
+margin-top:1em;
+padding: 1rem 4rem;
+font-size:1em;
+font-weight:bold;
+color:#e9ba23;
+background: #e31837;
+border:none;
+box-shadow: 3px 3px;
+transition: 0.2sec ease-out;
+cursor:pointer;
+
+&:hover {
+    box-shadow: 2px 2px;
+    transition: 0.2sec ease-out;
+    cursor:pointer;
+}
 `
